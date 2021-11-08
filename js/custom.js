@@ -1,3 +1,10 @@
+// Loader JS
+$(window).on('load',function() {
+	$('#loader-wrapper').fadeOut('slow', function(){
+		$('body').removeClass('style_overflow_hidden');
+	});
+});
+
 $(document).ready(function(){
 	// banner
 	$(".banner").slick({

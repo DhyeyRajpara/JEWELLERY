@@ -31,6 +31,48 @@ section{
 section{
 	overflow-y: hidden;
 }
+/*loader*/
+.style_overflow_hidden{
+	overflow: hidden;
+}
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#loader {
+	animation-name: blinker;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	background-image: url(../images/logo.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 120px;
+}
+@-moz-keyframes blinker {
+	0% { opacity: 1; }
+	50% { opacity: 0.2; }
+	100% { opacity: 1; }
+}
+@-webkit-keyframes blinker {
+	0% { opacity: 1; }
+	50% { opacity: 0.2; }
+	100% { opacity: 1; }
+}
+@keyframes blinker {
+	0% { opacity: 1; }
+	50% { opacity: 0.2; }
+	100% { opacity: 1; }
+}
 /*navbar*/
 /*top_header*/
 .top_header {
@@ -2113,6 +2155,6 @@ border-radius: 0 0 50px 0;
 	.collection_images_box_big,
 	.our_story_image_big,
 	.our_story_image_small {
-    max-width: 320px;
-}
+		max-width: 320px;
+	}
 }
