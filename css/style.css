@@ -2109,5 +2109,10 @@ border-radius: 0 0 50px 0;
 	.footer_content_field_number img {
 		max-width: 18px;
 	}
-
+	.collection_images_box_small,
+	.collection_images_box_big,
+	.our_story_image_big,
+	.our_story_image_small {
+    max-width: 320px;
+}
 }
