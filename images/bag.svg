@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.766" height="26.993" viewBox="0 0 19.766 26.993">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #070707;
+      }
+    </style>
+  </defs>
+  <g id="bag" transform="translate(-68.546)">
+    <g id="Group_36" data-name="Group 36" transform="translate(68.546)">
+      <path id="Path_47" data-name="Path 47" class="cls-1" d="M88.3,23.315l-1.439-15.8a.842.842,0,0,0-.84-.768H83.489V5.061a5.031,5.031,0,0,0-1.48-3.582,5.065,5.065,0,0,0-8.643,3.582V6.748H70.836a.842.842,0,0,0-.84.768l-1.436,15.8a3.374,3.374,0,0,0,3.361,3.68H84.936A3.376,3.376,0,0,0,88.3,23.315ZM81.8,6.748H75.053V5.061a3.374,3.374,0,1,1,6.748,0Z" transform="translate(-68.546)"/>
+    </g>
+  </g>
+</svg>

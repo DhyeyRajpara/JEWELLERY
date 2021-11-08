@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.colors-o {
+			color: #afafaf;
+			background-color: #212124;
+		}
+		.gate {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			z-index: 1000;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			-ms-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+		.gate .gate-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.colors-o .background-highlight {
+			background-color: #ba815b;
+		}
+		.colors-o {
+			color: #afafaf;
+			background-color: #212124 !important;
+		}
+		.gate .gate-bar {
+			position: absolute;
+			height: 7px;
+			width: 0%;
+		}
+		.preloader {
+			height: 100vh;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			/* display: none; */
+		}
+		.preloader .preloader-container {
+			width: 10rem;
+			height: 10rem;
+			background: transparent;
+			-webkit-box-flex: 1;
+			-webkit-flex: 1 1 1;
+			-ms-flex: 1 1 1;
+			flex: 1 1 1;
+			-webkit-align-self: center;
+			-ms-flex-item-align: center;
+			align-self: center;
+			-webkit-animation: animeThree 0.1s linear infinite;
+			animation: animeThree 0.1s linear infinite;
+		}
+		.preloader .preloader-container .circleOne {
+			background: transparent;
+			border: 1px solid;
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			-webkit-animation: animeOne 7.2s linear infinite;
+			animation: animeOne 7.2s linear infinite;
+			position: absolute;
+		}
+		.preloader .preloader-container .circleTwo {
+			background: transparent;
+			border: 1px solid;
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			-webkit-animation: animeTwo 7.2s linear infinite;
+			animation: animeTwo 7.2s linear infinite;
+			position: absolute;
+		}
+		.preloader .preloader-container .circleThree {
+			background: transparent;
+			border: 1px solid;
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			-webkit-animation: animeOne 4.8s linear infinite;
+			animation: animeOne 4.8s linear infinite;
+			position: absolute;
+		}
+		.preloader .preloader-container .circleFour {
+			background: transparent;
+			border: 1px solid;
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			-webkit-animation: animeTwo 4.8s linear infinite;
+			animation: animeTwo 4.8s linear infinite;
+			position: absolute;
+		}
+		.preloader .preloader-container .circleFive {
+			background: transparent;
+			border: 1px solid;
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			-webkit-animation: animeOne 2.4s linear infinite;
+			animation: animeOne 2.4s linear infinite;
+			position: absolute;
+		}
+		.preloader .preloader-container .circleSix {
+			background: transparent;
+			border: 1px solid;
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+			-webkit-animation: animeTwo 2.4s linear infinite;
+			animation: animeTwo 2.4s linear infinite;
+			position: absolute;
+		}
+		@-webkit-keyframes animeOne {
+			from {
+				-webkit-transform: rotateX(0deg);
+				transform: rotateX(0deg);
+				opacity: 0.2;
+			}
+			to {
+				-webkit-transform: rotateX(360deg);
+				transform: rotateX(360deg);
+				opacity: 0.6;
+			}
+		}
+		@keyframes animeOne {
+			from {
+				-webkit-transform: rotateX(0deg);
+				transform: rotateX(0deg);
+				opacity: 0.2;
+			}
+			to {
+				-webkit-transform: rotateX(360deg);
+				transform: rotateX(360deg);
+				opacity: 0.6;
+			}
+		}
+		@-webkit-keyframes animeTwo {
+			from {
+				-webkit-transform: rotateY(0deg);
+				transform: rotateY(0deg);
+				opacity: 0.2;
+			}
+			to {
+				-webkit-transform: rotateY(360deg);
+				transform: rotateY(360deg);
+				opacity: 0.6;
+			}
+		}
+		@keyframes animeTwo {
+			from {
+				-webkit-transform: rotateY(0deg);
+				transform: rotateY(0deg);
+				opacity: 0.2;
+			}
+			to {
+				-webkit-transform: rotateY(360deg);
+				transform: rotateY(360deg);
+				opacity: 0.6;
+			}
+		}
+		@-webkit-keyframes animeThree {
+			from {
+				-webkit-transform: rotateZ(0deg);
+				transform: rotateZ(0deg);
+			}
+			to {
+				-webkit-transform: rotateZ(360deg);
+				transform: rotateZ(360deg);
+			}
+		}
+		@keyframes animeThree {
+			from {
+				-webkit-transform: rotateZ(0deg);
+				transform: rotateZ(0deg);
+			}
+			to {
+				-webkit-transform: rotateZ(360deg);
+				transform: rotateZ(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="gate colors-o">
+		<div class="gate-content">
+			<!-- <div class="gate-bar background-highlight" style="width: 100%;"></div> -->
+			<div class="preloader">
+				<div class="preloader-container">
+					<div class="circleOne border-heading"></div>
+					<div class="circleTwo border-heading"></div>
+					<div class="circleThree border-heading"></div>
+					<div class="circleFour border-heading"></div>
+					<div class="circleFive border-heading"></div>
+					<div class="circleSix border-heading"></div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</body>
+</html>
