@@ -212,6 +212,12 @@ nav li .nav-link:hover {
 	background-color: #fff;
 	pointer-events: visible;
 }
+.banner_section .slick-active .banner_slider_box h1{
+	animation: fadeInLeft 1s;
+}
+.banner_section .slick-active .banner_slider_box p{
+	animation: fadeInLeft 1.5s;
+}
 /*shop_text_section*/
 .shop_text_section {
 	padding: 10px 0;
@@ -2029,6 +2035,10 @@ border-radius: 0 0 50px 0;
 	.footer_content_field_number a {
 		font-size: 14px;
 		margin-left: 12px;
+	}
+	#loader {
+		width: 120px;
+		height: 120px;
 	}
 }
 @media (max-width: 575px) {
