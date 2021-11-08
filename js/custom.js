@@ -204,4 +204,16 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2000,
 	});
+
+	// like Button JS
+	$(".like_btn").click(function(){
+		$(".like_btn i").removeClass("fa fa-heart-o").addClass("fa fa-heart");
+		// if ($(".like_btn i").hasClass("fa fa-heart-o") == true){
+		// 	$(".like_btn i").removeClass("fa-heart-o");
+		// 	$(".like_btn i").addClass("fa-heart");
+		// }else{
+		// 	$(".like_btn i").removeClass("fa-heart");
+		// 	$(".like_btn i").addClass("fa-heart-o");
+		// }
+	});
 });
