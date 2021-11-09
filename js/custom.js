@@ -1,8 +1,10 @@
 // Loader JS
 $(window).on('load',function() {
-	$('#loader-wrapper').fadeOut('slow', function(){
+	// $('#loader-wrapper').fadeOut('slow', function(){
 		$('body').removeClass('style_overflow_hidden');
-	});
+	// });
+	$('#loader-wrapper').addClass("zoomout");
+
 });
 
 $(document).ready(function(){
