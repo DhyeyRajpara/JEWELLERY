@@ -82,6 +82,14 @@ section{
 	animation-fill-mode: forwards;
 	pointer-events: none;
 }
+@-moz-keyframes zoom_out {
+	0% { transform: scale(1); }
+	100% { transform: scale(1.5);opacity: 0;visibility: hidden; }
+}
+@-webkit-keyframes zoom_out {
+	0% { transform: scale(1); }
+	100% { transform: scale(1.5);opacity: 0;visibility: hidden; }
+}
 @keyframes zoom_out {
 	0% { transform: scale(1); }
 	100% { transform: scale(1.5);opacity: 0;visibility: hidden; }
