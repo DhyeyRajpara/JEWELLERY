@@ -8,6 +8,7 @@ $(window).on('load',function() {
 });
 
 $(document).ready(function(){
+
 	// banner
 	$(".banner").slick({
 		dots: false,
@@ -218,4 +219,7 @@ $(document).ready(function(){
 		// 	$(".like_btn i").addClass("fa-heart-o");
 		// }
 	});
+
+	// AOS JS
+	AOS.init();
 });
