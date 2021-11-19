@@ -28,7 +28,7 @@ section{
 	overflow-x: hidden;
 }
 section{
-	overflow-y: unset;
+	overflow-y: hidden;
 }
 /*loader*/
 .style_overflow_hidden{
