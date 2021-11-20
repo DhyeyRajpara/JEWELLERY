@@ -22,19 +22,8 @@
 			-o-transition: all 0.5s;
 			transition: all 0.5s;
 		}
-		.gate .gate-content {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
 		.colors-o .background-highlight {
 			background-color: #ba815b;
-		}
-		.colors-o {
-			color: #afafaf;
-			background-color: #212124 !important;
 		}
 		.gate .gate-bar {
 			position: absolute;
@@ -66,12 +55,15 @@
 			align-self: center;
 			-webkit-animation: animeThree 0.1s linear infinite;
 			animation: animeThree 0.1s linear infinite;
+			position: relative;
 		}
 		.preloader .preloader-container .circleOne {
 			background: transparent;
 			border: 1px solid;
-			width: 10rem;
-			height: 10rem;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			border-radius: 50%;
 			-webkit-animation: animeOne 7.2s linear infinite;
 			animation: animeOne 7.2s linear infinite;
@@ -80,8 +72,10 @@
 		.preloader .preloader-container .circleTwo {
 			background: transparent;
 			border: 1px solid;
-			width: 10rem;
-			height: 10rem;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			border-radius: 50%;
 			-webkit-animation: animeTwo 7.2s linear infinite;
 			animation: animeTwo 7.2s linear infinite;
@@ -90,8 +84,10 @@
 		.preloader .preloader-container .circleThree {
 			background: transparent;
 			border: 1px solid;
-			width: 10rem;
-			height: 10rem;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			border-radius: 50%;
 			-webkit-animation: animeOne 4.8s linear infinite;
 			animation: animeOne 4.8s linear infinite;
@@ -100,8 +96,10 @@
 		.preloader .preloader-container .circleFour {
 			background: transparent;
 			border: 1px solid;
-			width: 10rem;
-			height: 10rem;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			border-radius: 50%;
 			-webkit-animation: animeTwo 4.8s linear infinite;
 			animation: animeTwo 4.8s linear infinite;
@@ -110,8 +108,10 @@
 		.preloader .preloader-container .circleFive {
 			background: transparent;
 			border: 1px solid;
-			width: 10rem;
-			height: 10rem;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			border-radius: 50%;
 			-webkit-animation: animeOne 2.4s linear infinite;
 			animation: animeOne 2.4s linear infinite;
@@ -120,8 +120,10 @@
 		.preloader .preloader-container .circleSix {
 			background: transparent;
 			border: 1px solid;
-			width: 10rem;
-			height: 10rem;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			border-radius: 50%;
 			-webkit-animation: animeTwo 2.4s linear infinite;
 			animation: animeTwo 2.4s linear infinite;
@@ -187,12 +189,12 @@
 		}
 		@keyframes animeThree {
 			from {
-				-webkit-transform: rotateZ(0deg);
-				transform: rotateZ(0deg);
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
 			}
 			to {
-				-webkit-transform: rotateZ(360deg);
-				transform: rotateZ(360deg);
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
 			}
 		}
 	</style>
@@ -209,6 +211,7 @@
 					<div class="circleFour border-heading"></div>
 					<div class="circleFive border-heading"></div>
 					<div class="circleSix border-heading"></div>
+					<div class="circleSeven border-heading"></div>
 				</div>
 			</div>		
 		</div>
